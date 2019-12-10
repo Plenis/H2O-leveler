@@ -1,12 +1,21 @@
 # H2O-leveler
 
-<<<<<<< HEAD
-####### -- Team Drip Drip (Amatontsi) --
-=======
 ###### -- Team Drip Drip (Amatontsi) --
->>>>>>> 6f2f9f927bfd417017144c46f1f1dadd5a6830e5
 
-The app we are creating will help us regulate and distripute water according to weather conditions and consumption per household/communities.
+
+The app we are creating will help us **regulate and distripute water** according to **weather conditions** and consumption per household/communities.
+
+
+The 2 images below are our personas for this app **Nkululeko** who is part of the Municipality and **Jackobus** a small scale farmer:
+
+
+![Alt Text](https://github.com/Plenis/H2O-leveler/blob/master/20191209_164043.jpg)
+
+![Alt Text](https://github.com/Plenis/H2O-leveler/blob/master/20191209_163957.jpg)
+
+
+
+Below are images on the planning we've came up with and what API's we'll be using and what data sets we require from those API's:
  
  
 ![Alt Text](https://github.com/Plenis/H2O-leveler/blob/master/20191209_164307.jpg)
@@ -21,13 +30,6 @@ The app we are creating will help us regulate and distripute water according to 
 
 ![Alt Text](https://github.com/Plenis/H2O-leveler/blob/master/20191209_164110.jpg)
 
-![Alt Text](https://github.com/Plenis/H2O-leveler/blob/master/20191209_164043.jpg)
-
-![Alt Text](https://github.com/Plenis/H2O-leveler/blob/master/20191209_163957.jpg)
 
 
-<<<<<<< HEAD
-=======
-=======
 
->>>>>>> 6f2f9f927bfd417017144c46f1f1dadd5a6830e5
