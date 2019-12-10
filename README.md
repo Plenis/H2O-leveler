@@ -1,6 +1,5 @@
 # H2O-leveler
 
-<<<<<<< HEAD
 ####### -- Team Drip Drip (Amatontsi) --
 
 The app we are creating will help us regulate and distripute water according to weather conditions and consumption per household/communities.
@@ -24,5 +23,4 @@ The app we are creating will help us regulate and distripute water according to 
 
 
 =======
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
->>>>>>> ed3ecb276cf0dea4efbe9214418f3eecf395d852
+
