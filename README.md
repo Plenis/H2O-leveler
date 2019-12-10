@@ -1,6 +1,6 @@
 # H2O-leveler
 
-####### -- Team Drip Drip (Amatontsi) --
+###### -- Team Drip Drip (Amatontsi) --
 
 The app we are creating will help us regulate and distripute water according to weather conditions and consumption per household/communities.
  
