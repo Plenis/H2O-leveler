@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>H2O-leveler</title>
-    {{!-- <link rel="stylesheet" href="/style.css"> --}}
+   <!-- <link rel="stylesheet" href="/style.css"> --}} -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.js"
         integrity="sha256-hSzapznWRy/aOZkctlN03an9DxCLlN8ZCQS0lxntiHg=" crossorigin="anonymous"></script>
@@ -14,12 +14,22 @@
         integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs=" crossorigin="anonymous"></script>
 
 </head>
-<body>
 
-{{{body}}}
+<body>
+    <div class="ui container">
+        <h1>H2O-Leveller</h1>
+        <h2>Enter a city name to get daily water limit</h2>
+        <div class="ui input">
+            <input name="cityName" row='1' type="text" cols="20" class="cityInput" placeholder="Enter a city name">
+        </div>
+        <button class="ui basic green button submitButton" type="submit" name="button">Submit</button>
+        <span class="weatherDisplay">
+
+        </span>
+    </div>
+
 </body>
 <script src="/h2o.js"></script>
-<script src="/h2o.js"></script>
+<script src="h2o-DOM.js"></script>
 
 </html>
-
