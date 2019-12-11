@@ -14,8 +14,9 @@ sbmtButton.addEventListener("click",function(){
   let urlString = mati.whichCity(textbox.value);
   urlString.then(function(response) {
   // handle success
- textbox.innerHTML = console.log(response.data);
-  // display.innerHTML = 
+  console.log(response.data.main.temp);
+ textbox.innerHTML = console.log(response.data.main.temp);
+  display.innerHTML = response.data.main.temp;
   // const colorsElem = document.querySelector(".brands");
   // colorsElem.innerHTML = makesTemplate({
   //   brands: response.data
