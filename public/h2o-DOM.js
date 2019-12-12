@@ -3,25 +3,22 @@ const sbmtButton = document.querySelector(".submitButton")
 const display = document.querySelector(".weatherDisplay")
 const mati = GetWeather();
 
-
-
-  // const colorsElem = document.querySelector(".brands");
-  // colorsElem.innerHTML = makesTemplate({
-  //   brands: response.data
-  // });
+// const weatherTemplateSource = document.querySelector(".weatherTemplate");
+// const weatherTemplate = document.querySelector(weatherTemplateSource.innerHTML);
 
 sbmtButton.addEventListener("click",function(){
-  let urlString = mati.whichCity(textbox.value);
+  let citySA = textbox.value
+  let urlString = mati.whichCity(citySA);
   urlString.then(function(response) {
-  // handle success
-  console.log(response.data.main.temp);
- textbox.innerHTML = console.log(response.data.main.temp);
-  display.innerHTML = response.data.main.temp;
-  // const colorsElem = document.querySelector(".brands");
-  // colorsElem.innerHTML = makesTemplate({
-  //   brands: response.data
-  // });
+
+  // // handle success
+  // console.log(response.data.main.temp);
+  citySA.innerHTML = console.log(response.data.main);
+  display.innerHTML = "Temperature for " + citySA + " is " + response.data.main.temp + "°C";
+
+  // const weatherElem = document.querySelector(".weatherDisplay");
+  // weatherElem.innerHTML = weatherTemplate({
+  //    weather: response.data.main
+  })
 });
  
-
-})
