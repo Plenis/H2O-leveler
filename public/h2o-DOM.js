@@ -3,20 +3,34 @@
 const textbox = document.querySelector(".cityInput")
 const sbmtButton = document.querySelector(".submitButton")
 const display = document.querySelector(".weatherDisplay")
+const displayTwo = document.querySelector(".waterData")
 const mati = GetWeather();
+var cityTemp;
+var dailyWaterLmt = 300;
+var citySA;
 
-sbmtButton.addEventListener("click",function(){
+sbmtButton.addEventListener("click", function () {
   let citySA = textbox.value
+
   let urlString = mati.whichCity(citySA);
-  urlString.then(function(response) {
-
-    if(response.data === "404 (Not Found)"){
-      display.innerHTML = "Enter a South African location"
-    }
- 
-  display.innerHTML = response.data.main.temp;
-
+  urlString.then(function (response) {
+    var cityTemp = response.data.main.temp
+    display.innerHTML = "The Temperature in " + citySA + " is " + cityTemp + "°C now";
+    displayTwo.innerHTML = setWaterLimit();
+  }).catch(function (err) {
+    display.innerHTML = "Place not found! Enter a South African city."
   })
 
 });
- 
+
+function setWaterLimit() {
+
+  if (cityTemp > 30) {
+    dailyWaterLmt + 50
+    return "Every household in " + citySA + " is Limited to  a water usage of " + dailyWaterLmt + "litres today";
+  } else {
+    return "Every household in " + citySA + " is Limited to  a water usage of " + dailyWaterLmt + "litres today";
+  }
+
+}
+
