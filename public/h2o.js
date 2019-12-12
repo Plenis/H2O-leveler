@@ -12,12 +12,14 @@ function GetWeather(){
         return axios.get(showWeather).then(results => results);
 
     }
-     console.log(whichCity("Johannesburg"));
+    // http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=3a9bb3a0c565cfcb9993d0673045fb83
+    // function weatherMap(city){
+        
+    // }
+     
 
     return {
         whichCity
     }
 }
-// console.log(GetWeather().whichCity("Johannesburg"))
-// http://api.openweathermap.org/data/2.5/weather?q=London&APPID=3a9bb3a0c565cfcb9993d0673045fb83&units=metric
 
