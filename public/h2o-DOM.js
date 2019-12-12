@@ -24,7 +24,7 @@ sbmtButton.addEventListener("click", function () {
 
 });
 
-checkLmtsBtn.addEventListener("click",function setWaterLimit() {
+checkLmtsBtn.addEventListener("click",function() {
   let hot = "Every household in " + citySA + " is Limited to  a water usage of " + dailyWaterLmt + "litres today";
   let normal = "Every household in " + citySA + " is Limited to  a water usage of " + dailyWaterLmt + "litres today";
 
