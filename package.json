@@ -1,10 +1,12 @@
 {
   "name": "H2O-leveler",
   "version": "1.0.0",
-  "description": "<<<<<<< HEAD ####### -- Team Drip Drip (Amatontsi) --",
+  "description": "Team Drip Drip (Amatontsi)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "mocha": "./node_modules/bin/mocha",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
