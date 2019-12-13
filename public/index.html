@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>H2O-leveler</title>
-   <!-- <link rel="stylesheet" href="/style.css"> --}} -->
+    <!-- <link rel="stylesheet" href="/style.css"> --}} -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="css/simplegrid.css">
     <link rel="stylesheet" href="css/h2o.css">
@@ -19,33 +19,66 @@
 
 </head>
 
-<body>
-    
+<body background="images/Hands.jpg">
+
     <div class="ui container">
-        <h1 class="heading center">H2O-Leveler</h1>
-        <h3 class="sub-text center">Enter a South African city name:</h3>
+        <h1 class="heading center">H2O-Leveller</h1>
+        <h3 class="sub-text center">Enter a South African city name to get daily water limit:</h3>
         <div class="input center">
-        <div class="ui input">
-            <input name="cityName" row='1' type="text" cols="20" class="cityInput" placeholder="Enter a city name">
+            <div class="ui input">
+                <input name="cityName" row='1' type="text" cols="20" class="cityInput" placeholder="Enter a city name">
+            </div>
+
+            <button class="ui green button submitButton" type="submit" name="button">Submit</button>
+            <br><br>
+            <div class="ui horizontal divider">
+
+            </div>
+            <div class="weatherDisplay">
+                <span class="weatherDisplay">
+
+
+                </span>
+            </div>
+
+            <br><br>
+            <button class="ui red button limitsButton" type="limits" name="button">Check Daily Limit</button>
+            <br><br>
+            <div class="row">
+            <div class="waterLimits">
+                <span class="waterData">
+
+                </span>
+            </div>
         </div>
+        </div>
+        <!-- <i class="question circle outline icon">Water Saving Tips</i> -->
        
-        <button class="ui basic green button submitButton" type="submit" name="button">Submit</button>
-        <br><br>
-        <div class="weatherDisplay">
-        <span class="weatherDisplay">
+        <div class="center">
+            
+        </div>
+        <br>
+        <div class="row">
+        <div class="popup" onclick="myFunction()">Tips For Saving Water
+                <span class="popuptext" id="myPopup">
+                    <h1>Water Saving Tips</h1>
 
-        </span>
-    </div>
-<br><br>
-    <button class="ui basic red button limitsButton" type="limits" name="button">Check Daily Limits</button>
-    <br><br>
-    <div class="waterLimits">
-        <span class="waterData">
+                    1. Limit your Shower time.<br>
+                    2. Switch the water off while Shaving or Brushing your Teeth.<br>
+                    3. Only wash Plates when Necessary.<br>
+                    4. Fix any Leaks.<br>
+                    5. Water your Garden when the sun is down.<br>
+                    6. Water your plants with recycled water.<br>
+                    7. Recycle.<br>
+                    8. Use grey water to Flush Toilets.<br>
+                    9. Only wash Full Loads of Clothes and Dishes.<br>
+                    10. The ol’ brick in the toilet.<br>
+                </span>
+              </div>
+            </div>
+        
 
-        </span>
     </div>
-    </div>
-</div>
 
 </body>
 <script src="/h2o.js"></script>

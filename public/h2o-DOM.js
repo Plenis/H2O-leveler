@@ -6,7 +6,6 @@ const display = document.querySelector(".weatherDisplay")
 const displayTwo = document.querySelector(".waterData")
 const mati = GetWeather();
 var cityTemp;
-// var dailyWaterLmt;
 var citySA = "";
 
 sbmtButton.addEventListener("click", function () {
@@ -14,9 +13,9 @@ sbmtButton.addEventListener("click", function () {
 
   let urlString = mati.whichCity(citySA);
   urlString.then(function (response) {
-     cityTemp = response.data.main.temp
+     cityTemp = response.data.main.temp;
+
     display.innerHTML = "The Temperature in " + citySA + " is " + cityTemp + "°C now.";
-    // displayTwo.innerHTML = setWaterLimit();
   }).catch(function (err) {
     display.innerHTML = "Place not found! Enter a South African city."
   })
@@ -42,6 +41,10 @@ checkLmtsBtn.addEventListener("click",function() {
   }
  
   })
-  
+ 
 
 })
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
